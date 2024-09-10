@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-container {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    padding: 20px;
+    width: 80%;
+    margin: auto; 
+}
+.gallery-container:hover .gallery-item{
+    opacity: .5;
+}
+.gallery-container .gallery-item:hover {
+    opacity: 1
+}
+
+.gallery-item {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px; 
+    transition: all .3s;
+}
+.gallery-item:hover{
+    transform: translateY(-20px)
+}
+
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+}
